@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chakra Gyaan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <img src="images/Untitled design.png" alt="Chakra Gyaan Logo">
+      </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn btn-small">Book Now</button>
+      <button class="btn btn-small" onclick="window.location.href='login.html'">Login</button>
+    </div>
+  </header>
+
+  <section class="kundli-section">
+    <div class="kundli-container">
+      <h1>Kundli Analysis</h1>
+      <p>Enter your birth details to get your personalized kundli insights.</p>
+  
+      <div class="kundli-card">
+        <div class="kundli-grid">
+          <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name">
+          </div>
+  
+          <div class="input-box">
+            <label>Date of Birth</label>
+            <input type="date">
+          </div>
+  
+          <div class="input-box">
+            <label>Time of Birth</label>
+            <input type="time">
+          </div>
+  
+          <div class="input-box">
+            <label>Place of Birth</label>
+            <input type="text" placeholder="Enter place of birth">
+          </div>
+        </div>
+  
+        <button class="kundli-btn" onclick="generateDummyKundli()">Generate Kundli</button>
+          </div>
+    </div>
+  </section>
+  <div id="kundliResult" class="kundli-result" style="display: none;"></div>
+  
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>For booking, support or queries, connect with Chakra Gyaan today.</p>
+    <button class="btn" onclick="showMessage()">Get in Touch</button>
+  </section>
+  <a href="https://wa.me/917590000002" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="whatsapp">
+  </a>
+
+  <footer class="footer">
+    <p>© 2026 Chakra Gyaan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

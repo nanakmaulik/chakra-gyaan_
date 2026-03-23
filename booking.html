@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Consultation - Chakra Gyaan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="booking-body">
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Chakra Gyaan Logo">
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#packages">Packages</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn btn-small" onclick="window.location.href='index.html'">
+      Back to Home
+    </button>
+  </header>
+
+  <section class="booking-section">
+    <div class="booking-wrapper">
+
+      <div class="booking-left">
+        <img src="images/logo.png" alt="Chakra Gyaan Logo" class="booking-logo" />
+        <h1>Book Your Consultation</h1>
+        <p>
+          Choose your spiritual service, share your birth details, and reserve
+          your session with Chakra Gyaan.
+        </p>
+
+        <div class="booking-info-card">
+          <h3>Available Services</h3>
+          <ul>
+            <li>Kundli Analysis — ₹299</li>
+            <li>Audio Call Consultation — ₹999</li>
+            <li>Video Call Session — ₹2999</li>
+            <li>Negativity Removal Session — ₹4999</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="booking-right">
+        <form id="bookingForm" class="booking-form">
+          <h2>Consultation Details</h2>
+
+          <div class="booking-grid">
+            <div class="input-group">
+              <label>Full Name</label>
+              <input type="text" id="fullName" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="input-group">
+              <label>Mobile Number</label>
+              <input type="tel" id="mobile" placeholder="Enter your mobile number" required />
+            </div>
+
+            <div class="input-group">
+              <label>Date of Birth</label>
+              <input type="date" id="dob" required />
+            </div>
+
+            <div class="input-group">
+              <label>Birth Time</label>
+              <input type="time" id="birthTime" required />
+            </div>
+
+            <div class="input-group">
+              <label>Birth Place</label>
+              <input type="text" id="birthPlace" placeholder="Enter birth place" required />
+            </div>
+
+            <div class="input-group">
+              <label>Select Service</label>
+              <select id="serviceType" required>
+                <option value="">Choose a service</option>
+                <option value="Kundli Analysis">Kundli Analysis</option>
+                <option value="Audio Call Consultation">Audio Call Consultation</option>
+                <option value="Video Call Session">Video Call Session</option>
+                <option value="Negativity Removal Session">Negativity Removal Session</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label>Preferred Session Date</label>
+              <input type="date" id="sessionDate" required />
+            </div>
+
+            <div class="input-group">
+              <label>Preferred Session Time</label>
+              <input type="time" id="sessionTime" required />
+            </div>
+
+            <div class="input-group">
+              <label>Consultation Mode</label>
+              <select id="consultationMode" required>
+                <option value="">Choose mode</option>
+                <option value="Chat">Chat</option>
+                <option value="Audio Call">Audio Call</option>
+                <option value="Video Call">Video Call</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Your Concern / Problem</label>
+            <textarea
+              id="concern"
+              rows="5"
+              placeholder="Write your concern here..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="booking-summary">
+            <div class="summary-row">
+              <span>Selected Service:</span>
+              <strong id="selectedServiceText">Not selected</strong>
+            </div>
+            <div class="summary-row">
+              <span>Price:</span>
+              <strong id="selectedPrice">₹0</strong>
+            </div>
+          </div>
+
+          <button type="submit" class="btn booking-btn">Confirm Booking</button>
+
+          <p id="bookingMessage" class="booking-message"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
